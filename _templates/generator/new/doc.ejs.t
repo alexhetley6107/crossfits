@@ -1,20 +1,23 @@
+---
+to: src/components/<%= name %>/doc/<%= name %>.mdx
+---
 import { Canvas, Meta } from '@storybook/blocks';
 import { Example } from './Example.tsx';
-import * as Button from './Button.stories.tsx';
+import * as <%= name %> from './Button.stories.tsx';
 
-<Meta of={Button} title="Button" />
+<Meta of={<%= name %>} title="Button" />
 
 # Button
 
-<Canvas of={Button.Base} />
+<Canvas of={<%= name %>.Base} />
 
 ## Usage
 
 ```ts
-import { Button } from 'remindee-ui-kit';
+import { <%= name %> } from 'remindee-ui-kit';
 
 export const Example = () => {
-  return <Button />;
+  return <<%= name %> />;
 };
 ```
 
