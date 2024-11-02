@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Button } from '../Button.tsx';
+import * as ButtonStory from './Button.stories.tsx';
+
+<Meta of={ButtonStory} title="Button" />
+
+# Button
+
+<Canvas of={ButtonStory.Base} />
+
+## Usage
+
+```ts
+import { Button } from 'remindee-ui-kit';
+
+const Example = () => {
+  return <Button />;
+};
+```
+
+### Arguments
+
+- **disabled** - A boolean indicating whether the button should be disabled or not.
