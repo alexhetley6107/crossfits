@@ -4,7 +4,7 @@ import { MarginDecorator } from '@/decorators';
 
 const meta: Meta<typeof Example> = {
   title: 'Components/Button',
-  decorators: [MarginDecorator],
+  decorators: [ MarginDecorator ],
   component: Example,
 };
 
