@@ -3,9 +3,9 @@ to: src/components/<%= name %>/doc/<%= name %>.mdx
 ---
 import { Canvas, Meta } from '@storybook/blocks';
 import { Example } from './Example.tsx';
-import * as <%= name %> from './Button.stories.tsx';
+import * as <%= name %> from './<%= name %>.stories.tsx';
 
-<Meta of={<%= name %>} title="Button" />
+<Meta of={<%= name %>} title="<%= name %>" />
 
 # Button
 

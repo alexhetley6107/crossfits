@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as NowLine from './NowLine.stories.tsx';
+
+<Meta of={NowLine} title="NowLine" />
+
+# Button
+
+<Canvas of={NowLine.Base} />
+
+## Usage
+
+```ts
+import { NowLine } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <NowLine text="Now" />;
+};
+```
+
+### Arguments
+
+- **disabled** - A boolean indicating whether the button should be disabled or not.

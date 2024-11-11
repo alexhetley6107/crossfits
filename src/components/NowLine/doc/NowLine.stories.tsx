@@ -3,7 +3,7 @@ import { Example } from './Example';
 import { MarginDecorator, CenterDecorator } from '@/decorators';
 
 const meta: Meta<typeof Example> = {
-  title: 'Components/Button',
+  title: 'Components/NowLine',
   decorators: [MarginDecorator, CenterDecorator],
   component: Example,
 };
