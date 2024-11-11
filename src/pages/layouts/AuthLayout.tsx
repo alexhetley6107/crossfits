@@ -13,10 +13,30 @@ export const AuthLayout: React.FC<PropsWithChildren> = ({ children }) => {
       <div
         style={{
           flexGrow: 1,
-          backgroundColor: 'red',
+          overflow: 'hidden',
         }}
-      />
-      <div style={{ width: '400px' }}>{children}</div>
+      >
+        <img
+          src="./images/planning.jpg"
+          alt="Welcome"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+      <div
+        style={{
+          width: '450px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100%',
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 };
