@@ -14,10 +14,14 @@ import * as Button from './Button.stories.tsx';
 import { Button } from 'remindee-ui-kit';
 
 export const Example = () => {
-  return <Button />;
+  return <Button text="Button" />;
 };
 ```
 
 ### Arguments
 
+- **text** - A string value of the text inside button.
 - **disabled** - A boolean indicating whether the button should be disabled or not.
+- **fullWidth** - A boolean value indicating whether the button should take all available width.
+- **size** - A string value which determine button's size layout. Options: `sm` and `lg`.
+- **variant** - A string value which determine button's display layout. Options: `filled` and `outlined`.

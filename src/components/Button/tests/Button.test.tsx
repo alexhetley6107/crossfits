@@ -12,4 +12,45 @@ describe('Button component', () => {
       expect(button).toBeInTheDocument();
     });
   });
+  describe('Props', () => {
+    it('text', () => {
+      render(<Button text="Button" />);
+      const text = screen.getByText('Button');
+      expect(text).toBeInTheDocument();
+    });
+    describe('Size', () => {
+      it('Small', () => {
+        render(<Button text="Button" size="sm" />);
+        const button = screen.getByTestId('button');
+        expect(button).toMatchSnapshot();
+      });
+      it('Large', () => {
+        render(<Button text="Button" size="lg" />);
+        const button = screen.getByTestId('button');
+        expect(button).toMatchSnapshot();
+      });
+    });
+    describe('variant', () => {
+      it('Filled', () => {
+        render(<Button text="Button" variant="filled" />);
+        const button = screen.getByTestId('button');
+        expect(button).toMatchSnapshot();
+      });
+      it('Outlined', () => {
+        render(<Button text="Button" variant="outlined" />);
+        const button = screen.getByTestId('button');
+        expect(button).toMatchSnapshot();
+      });
+    });
+    it('Full Width', () => {
+      render(<Button text="Button" fullWidth />);
+      const button = screen.getByTestId('button');
+      expect(button).toMatchSnapshot();
+    });
+    it('Disabled', () => {
+      render(<Button text="Button" disabled />);
+      const button = screen.getByTestId('button');
+      expect(button).toMatchSnapshot();
+    });
+  });
 });

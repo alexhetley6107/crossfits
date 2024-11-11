@@ -1,0 +1,182 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button component > Props > Disabled 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #1c15e6;
+  width: auto;
+  opacity: 0.4;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1c15e6;
+}
+
+.c0:hover:not([disabled]) {
+  transform: translateY(-1px);
+}
+
+.c0:active:not([disabled]) {
+  transform: translateY(1px);
+}
+
+<button
+  class="c0"
+  data-testid="button"
+  disabled=""
+>
+  Button
+</button>
+`;
+
+exports[`Button component > Props > Full Width 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #1c15e6;
+  width: 100%;
+  opacity: 1;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1c15e6;
+}
+
+.c0:hover:not([disabled]) {
+  transform: translateY(-1px);
+}
+
+.c0:active:not([disabled]) {
+  transform: translateY(1px);
+}
+
+<button
+  class="c0"
+  data-testid="button"
+>
+  Button
+</button>
+`;
+
+exports[`Button component > Props > Size > Large 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #1c15e6;
+  width: auto;
+  opacity: 1;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #1c15e6;
+}
+
+.c0:hover:not([disabled]) {
+  transform: translateY(-1px);
+}
+
+.c0:active:not([disabled]) {
+  transform: translateY(1px);
+}
+
+<button
+  class="c0"
+  data-testid="button"
+>
+  Button
+</button>
+`;
+
+exports[`Button component > Props > Size > Small 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #1c15e6;
+  width: auto;
+  opacity: 1;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1c15e6;
+}
+
+.c0:hover:not([disabled]) {
+  transform: translateY(-1px);
+}
+
+.c0:active:not([disabled]) {
+  transform: translateY(1px);
+}
+
+<button
+  class="c0"
+  data-testid="button"
+>
+  Button
+</button>
+`;
+
+exports[`Button component > Props > variant > Filled 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #1c15e6;
+  width: auto;
+  opacity: 1;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1c15e6;
+}
+
+.c0:hover:not([disabled]) {
+  transform: translateY(-1px);
+}
+
+.c0:active:not([disabled]) {
+  transform: translateY(1px);
+}
+
+<button
+  class="c0"
+  data-testid="button"
+>
+  Button
+</button>
+`;
+
+exports[`Button component > Props > variant > Outlined 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #1c15e6;
+  width: auto;
+  opacity: 1;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #1c15e6;
+  background-color: #fff;
+}
+
+.c0:hover:not([disabled]) {
+  transform: translateY(-1px);
+}
+
+.c0:active:not([disabled]) {
+  transform: translateY(1px);
+}
+
+<button
+  class="c0"
+  data-testid="button"
+>
+  Button
+</button>
+`;
