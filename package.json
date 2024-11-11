@@ -12,6 +12,7 @@
     "sb": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "create-component": "hygen generator new",
+    "create-page": "hygen pagegenerator new",
     "test": "vitest run",
     "test-update": "vitest run --update",
     "prepare": "husky install"

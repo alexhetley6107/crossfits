@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { AuthLayout } from '../layouts/AuthLayout';
 
-export const Login: FC = () => {
+export const LoginPage: FC = () => {
   return <AuthLayout>Login</AuthLayout>;
 };

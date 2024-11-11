@@ -1,13 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Login } from '../Login';
+import { LoginPage } from '../LoginPage';
 import { ThemeDecorator } from '@/decorators';
 
-const meta: Meta<typeof Login> = {
+const meta: Meta<typeof LoginPage> = {
   title: 'Pages/Login',
-  decorators: [ThemeDecorator],
-  component: Login,
+  decorators: [ ThemeDecorator ],
+  component: LoginPage,
 };
 
 export default meta;
-
-export const LoginPage: StoryObj<typeof Login> = {};
+export const Login: StoryObj<typeof LoginPage> = {};
