@@ -1,4 +1,4 @@
-import { theme } from '@/themes';
+import { theme } from '@/themes/theme';
 import React from 'react';
 import styled from 'styled-components';
 

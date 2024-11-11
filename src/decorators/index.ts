@@ -1,2 +1,2 @@
 export { MarginDecorator } from './marginDecorator';
-export { CenterDecorator } from './centerDecorator';
+export { ThemeDecorator } from './themeDecorator';
