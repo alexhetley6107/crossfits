@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NowLine component > Props > Top 1`] = `
+.c0 {
+  position: absolute;
+  height: 1.5px;
+  background-color: blue;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 35px;
+}
+
+.c1 {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  color: blue;
+  font-size: 14px;
+}
+
+<div
+  class="c0"
+  data-testid="NowLine"
+>
+  <span
+    class="c1"
+  >
+    Now
+  </span>
+</div>
+`;

@@ -26,7 +26,7 @@ const StyledText = styled.span`
 
 export const NowLine: React.FC<NowLineProps> = ({ text, top = 0 }) => {
   return (
-    <NowLineWrapper $top={top}>
+    <NowLineWrapper $top={top} data-testid="NowLine">
       <StyledText>{text}</StyledText>
     </NowLineWrapper>
   );
