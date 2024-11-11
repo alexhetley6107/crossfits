@@ -7,8 +7,8 @@ import 'jest-styled-components';
 describe('Button component', () => {
   describe('General', () => {
     it('Render', () => {
-      render(<Button />);
-      const button = screen.getByText('Button');
+      render(<Button text="Button" />);
+      const button = screen.getByTestId('button');
       expect(button).toBeInTheDocument();
     });
   });

@@ -13,6 +13,7 @@
     "build-storybook": "storybook build",
     "create-component": "hygen generator new",
     "test": "vitest run",
+    "test-update": "vitest run --update",
     "prepare": "husky install"
   },
   "peerDependencies": {

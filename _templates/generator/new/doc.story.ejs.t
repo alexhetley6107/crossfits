@@ -7,7 +7,7 @@ import { MarginDecorator, CenterDecorator } from '@/decorators';
 
 const meta: Meta<typeof Example> = {
   title: 'Components/<%= name %>',
-  decorators: [ MarginDecorator, CenterDecorator ],
+  decorators: [ CenterDecorator, MarginDecorator ],
   component: Example,
 };
 

@@ -4,7 +4,7 @@ exports[`NowLine component > Props > Top 1`] = `
 .c0 {
   position: absolute;
   height: 1.5px;
-  background-color: blue;
+  background-color: #1c15e6;
   width: 100%;
   right: 0;
   left: 0;
@@ -15,7 +15,7 @@ exports[`NowLine component > Props > Top 1`] = `
   position: absolute;
   right: 0;
   bottom: 5px;
-  color: blue;
+  color: #1c15e6;
   font-size: 14px;
 }
 

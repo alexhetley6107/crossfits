@@ -1,10 +1,6 @@
 import { FC } from 'react';
 import { Button, ButtonProps } from '../Button';
 
-export const Example: FC<ButtonProps> = () => {
-   return (
-    <div>
-      <Button />
-    </div>
-  );
+export const Example: FC<ButtonProps> = (props) => {
+  return <Button {...props} />;
 };

@@ -1,3 +1,4 @@
+import { theme } from '@/themes';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -9,7 +10,7 @@ export type NowLineProps = {
 const NowLineWrapper = styled.div<{ $top: number }>`
   position: absolute;
   height: 1.5px;
-  background-color: blue;
+  background-color: ${theme.colors.primary};
   width: 100%;
   right: 0;
   left: 0;
@@ -20,7 +21,7 @@ const StyledText = styled.span`
   position: absolute;
   right: 0;
   bottom: 5px;
-  color: blue;
+  color: ${theme.colors.primary};
   font-size: 14px;
 `;
 
