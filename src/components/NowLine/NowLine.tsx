@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export type NowLineProps = {
   text: string;
   top?: number;
+  className?: string;
 };
 
 const NowLineWrapper = styled.div<{ $top: number }>`
@@ -25,9 +26,9 @@ const StyledText = styled.span`
   font-size: 14px;
 `;
 
-export const NowLine: React.FC<NowLineProps> = ({ text, top = 0 }) => {
+export const NowLine: React.FC<NowLineProps> = ({ text, top = 0, ...props }) => {
   return (
-    <NowLineWrapper $top={top} data-testid="NowLine">
+    <NowLineWrapper $top={top} data-testid="NowLine" {...props}>
       <StyledText>{text}</StyledText>
     </NowLineWrapper>
   );

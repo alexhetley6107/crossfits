@@ -5,13 +5,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 export type <%= name %>Props = {
-  error?: boolean;
+  className?: string;
 }
 
 const <%= name %>Wrapper= styled.div``;
 
-export const <%= name %>:React.FC<<%= name %>Props> = () => {
-  return <<%= name %>Wrapper><%= name %></<%= name %>Wrapper>;
+export const <%= name %>:React.FC<<%= name %>Props> = ({...props}) => {
+  return <<%= name %>Wrapper {...props}><%= name %></<%= name %>Wrapper>;
 };
 
 

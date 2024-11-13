@@ -23,4 +23,4 @@ export const Example = () => {
 
 ### Arguments
 
-- **disabled** - A boolean indicating whether the button should be disabled or not.
+- **className** - A string that sets css class to the root of component.

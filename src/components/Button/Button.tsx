@@ -6,6 +6,7 @@ type ButtonSize = 'sm' | 'lg';
 type ButtonVariant = 'filled' | 'outlined';
 
 export type ButtonProps = {
+  className?: string;
   text: string;
   disabled?: boolean;
   size?: ButtonSize;
@@ -66,6 +67,7 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'sm',
   variant = 'filled',
   fullWidth = false,
+  ...props
 }) => {
   return (
     <StyledButton
@@ -75,6 +77,7 @@ export const Button: React.FC<ButtonProps> = ({
       $fullWidth={fullWidth}
       onClick={onClick}
       disabled={disabled}
+      {...props}
     >
       {text}
     </StyledButton>
