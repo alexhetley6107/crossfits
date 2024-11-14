@@ -12,4 +12,16 @@ describe('LogoText component', () => {
       expect(el).toBeInTheDocument();
     });
   });
+  describe('Size', () => {
+    it('Small', () => {
+      render(<LogoText size="sm" />);
+      const el = screen.getByTestId('LogoText');
+      expect(el).toMatchSnapshot();
+    });
+    it('Large', () => {
+      render(<LogoText size="lg" />);
+      const el = screen.getByTestId('LogoText');
+      expect(el).toMatchSnapshot();
+    });
+  });
 });
