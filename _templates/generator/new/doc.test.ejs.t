@@ -11,8 +11,8 @@ describe('<%= name %> component', () => {
  describe('General', () => {
     it('Render', () => {
       // render(<<%= name %> />);
-      // const target = screen.getByText('<%= name %>');
-      // expect(target).toBeInTheDocument();
+      // const el = screen.getByTestId('<%= name %>');
+      // expect(el).toBeInTheDocument();
       expect('Render').toBe('Render');
     });
   });

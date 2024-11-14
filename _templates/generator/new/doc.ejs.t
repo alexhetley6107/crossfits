@@ -7,7 +7,7 @@ import * as <%= name %> from './<%= name %>.stories.tsx';
 
 <Meta of={<%= name %>} title="<%= name %>" />
 
-# Button
+# <%= name %>
 
 <Canvas of={<%= name %>.Base} />
 

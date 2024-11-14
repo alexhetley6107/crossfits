@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Avatar component > Props > Text 1`] = `
+.c0 {
+  height: 38px;
+  width: 38px;
+  border-radius: 1000px;
+  border: 1px solid #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c1 {
+  color: #333;
+}
+
+<div
+  class="c0"
+  data-testid="Avatar"
+>
+  <span
+    class="c1"
+  >
+    AB
+  </span>
+</div>
+`;

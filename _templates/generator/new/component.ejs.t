@@ -11,7 +11,7 @@ export type <%= name %>Props = {
 const <%= name %>Wrapper= styled.div``;
 
 export const <%= name %>:React.FC<<%= name %>Props> = ({...props}) => {
-  return <<%= name %>Wrapper {...props}><%= name %></<%= name %>Wrapper>;
+  return <<%= name %>Wrapper data-testid="<%= name %>" {...props}><%= name %></<%= name %>Wrapper>;
 };
 
 
