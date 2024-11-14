@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as Input from './Input.stories.tsx';
+
+<Meta of={Input} title="Input" />
+
+# Input
+
+<Canvas of={Input.Base} />
+
+## Usage
+
+```ts
+import { Input } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <Input />;
+};
+```
+
+### Arguments
+
+- **className** - A string that sets css class to the root of component.

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { AuthLayout } from '../layouts/AuthLayout';
-import { Button, LogoText } from '@/components';
+import { Button, Input, LogoText } from '@/components';
 
 export const LoginPage: FC = () => {
   return (
@@ -9,13 +9,14 @@ export const LoginPage: FC = () => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
           gap: '20px',
           width: '370px',
           minWidth: '370px',
+          padding: '20px',
         }}
       >
-        <LogoText />
+        <LogoText size="lg" />
+        <Input placeholder="Email" />
         <Button text="Log In" size="lg" fullWidth />
       </div>
     </AuthLayout>

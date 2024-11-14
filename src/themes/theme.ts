@@ -9,6 +9,7 @@ export const theme = {
   },
   radius: {
     R5: '5px',
+    R7: '7px',
     RFull: '1000px',
   },
 };
