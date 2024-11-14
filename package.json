@@ -6,7 +6,6 @@
   "author": "Aleksandr Bredun (hetley)",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "sb": "storybook dev -p 6006",

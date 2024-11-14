@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as LogoText from './LogoText.stories.tsx';
+
+<Meta of={LogoText} title="LogoText" />
+
+# LogoText
+
+<Canvas of={LogoText.Base} />
+
+## Usage
+
+```ts
+import { LogoText } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <LogoText />;
+};
+```
+
+### Arguments
+
+- **className** - A string that sets css class to the root of component.
