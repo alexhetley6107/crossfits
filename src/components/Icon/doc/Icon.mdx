@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as Icon from './Icon.stories.tsx';
+
+<Meta of={Icon} title="Icon" />
+
+# Icon
+
+<Canvas of={Icon.Base} />
+
+## Usage
+
+```ts
+import { Icon } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <Icon />;
+};
+```
+
+### Arguments
+
+- **className** - A string that sets css class to the root of component.
