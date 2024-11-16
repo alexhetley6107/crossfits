@@ -1,8 +1,7 @@
 import { theme } from '@/themes';
+import { SizeUnion } from '@/types';
 import React from 'react';
 import styled from 'styled-components';
-
-type SizeUnion = 'sm' | 'lg';
 
 export type LogoTextProps = {
   className?: string;

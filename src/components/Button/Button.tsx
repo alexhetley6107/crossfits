@@ -1,22 +1,20 @@
 import { Focus } from '@/shared';
 import { theme } from '@/themes/theme';
+import { ButtonVariant, SizeUnion } from '@/types';
 import React from 'react';
 import styled from 'styled-components';
-
-type ButtonSize = 'sm' | 'lg';
-type ButtonVariant = 'filled' | 'outlined';
 
 export type ButtonProps = {
   className?: string;
   text: string;
   disabled?: boolean;
-  size?: ButtonSize;
+  size?: SizeUnion;
   variant?: ButtonVariant;
   fullWidth?: boolean;
   onClick?: () => void;
 };
 
-const sizeMap: Record<string, Record<ButtonSize, string>> = {
+const sizeMap: Record<string, Record<SizeUnion, string>> = {
   padding: {
     sm: '5px 12px',
     lg: '10px 24px',
@@ -38,7 +36,7 @@ const variantMap: Record<string, Record<ButtonVariant, string>> = {
 };
 
 const StyledButton = styled.button<{
-  $size: ButtonSize;
+  $size: SizeUnion;
   $variant: ButtonVariant;
   $fullWidth?: boolean;
   disabled?: boolean;

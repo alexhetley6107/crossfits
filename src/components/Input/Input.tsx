@@ -24,7 +24,7 @@ const StyledTitle = styled.span`
   display: block;
   margin-bottom: 6px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
 `;
 
 const StyledInput = styled.input<{ $icon: boolean }>`

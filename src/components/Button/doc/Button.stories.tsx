@@ -10,3 +10,5 @@ const meta: Meta<typeof Example> = {
 
 export default meta;
 export { Base } from './stories/Base';
+export { Sizes } from './stories/Sizes';
+export { Variants } from './stories/Variants';
