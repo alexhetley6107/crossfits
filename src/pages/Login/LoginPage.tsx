@@ -1,13 +1,13 @@
 import { FC } from 'react';
-import { AuthLayout } from '../layouts/AuthLayout';
+import { AuthLayout } from '../layouts';
 import { Button, Input, LogoText } from '@/components';
+import { Flex } from '@/shared';
 
 export const LoginPage: FC = () => {
   return (
     <AuthLayout>
-      <div
-        style={{
-          display: 'flex',
+      <Flex
+        styles={{
           flexDirection: 'column',
           gap: '20px',
           width: '370px',
@@ -18,7 +18,7 @@ export const LoginPage: FC = () => {
         <LogoText size="lg" />
         <Input placeholder="Email" />
         <Button text="Log In" size="lg" fullWidth />
-      </div>
+      </Flex>
     </AuthLayout>
   );
 };

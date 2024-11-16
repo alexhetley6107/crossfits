@@ -24,6 +24,7 @@ const StyledText = styled.span`
   bottom: 5px;
   color: ${theme.colors.primary};
   font-size: 14px;
+  font-weight: 600;
 `;
 
 export const NowLine: React.FC<NowLineProps> = ({ text, top = 0, ...props }) => {

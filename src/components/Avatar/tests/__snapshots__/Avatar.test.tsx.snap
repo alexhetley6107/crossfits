@@ -2,8 +2,8 @@
 
 exports[`Avatar component > Props > Text 1`] = `
 .c0 {
-  height: 38px;
-  width: 38px;
+  height: 32px;
+  width: 32px;
   border-radius: 1000px;
   border: 1px solid #808080;
   display: flex;

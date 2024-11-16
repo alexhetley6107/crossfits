@@ -17,6 +17,7 @@ exports[`NowLine component > Props > Top 1`] = `
   bottom: 5px;
   color: #346beb;
   font-size: 14px;
+  font-weight: 600;
 }
 
 <div

@@ -8,8 +8,8 @@ export type AvatarProps = {
 };
 
 const AvatarWrapper = styled.div`
-  height: 38px;
-  width: 38px;
+  height: 32px;
+  width: 32px;
   border-radius: ${theme.radius.RFull};
   border: 1px solid ${theme.colors.grey};
   display: flex;
