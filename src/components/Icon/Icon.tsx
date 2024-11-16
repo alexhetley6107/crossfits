@@ -1,8 +1,9 @@
 import React, { HTMLAttributes } from 'react';
+import { IconsUnion } from '@/types';
 
 export type IconProps = HTMLAttributes<SVGElement> & {
   className?: string;
-  name?: string;
+  name: IconsUnion;
   color?: string;
   size?: string;
 };
