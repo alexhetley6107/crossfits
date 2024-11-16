@@ -1,3 +1,4 @@
+import { Focus } from '@/shared';
 import { theme } from '@/themes/theme';
 import React from 'react';
 import styled from 'styled-components';
@@ -42,15 +43,10 @@ const StyledButton = styled.button<{
   $fullWidth?: boolean;
   disabled?: boolean;
 }>`
-  border-radius: ${theme.radius.R5};
+  outline: none;
+  border-radius: ${theme.radius.R6};
   cursor: pointer;
   transition: all 0.1s;
-  &:hover:not([disabled]) {
-    transform: translateY(-1px);
-  }
-  &:active:not([disabled]) {
-    transform: translateY(1px);
-  }
   border: 1px solid ${theme.colors.primary};
   width: ${({ $fullWidth }) => ($fullWidth ? '100%' : 'auto')};
   opacity: ${({ disabled }) => (disabled ? 0.4 : 1)};
@@ -58,6 +54,9 @@ const StyledButton = styled.button<{
   font-size: ${({ $size }) => sizeMap.font[$size]};
   color: ${({ $variant }) => variantMap.color[$variant]};
   background-color: ${({ $variant }) => variantMap.background[$variant]};
+  &:focus ~ .focus {
+    opacity: 1;
+  }
 `;
 
 export const Button: React.FC<ButtonProps> = ({
@@ -67,19 +66,24 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'sm',
   variant = 'filled',
   fullWidth = false,
+  className,
   ...props
 }) => {
   return (
-    <StyledButton
-      data-testid="button"
-      $size={size}
-      $variant={variant}
-      $fullWidth={fullWidth}
-      onClick={onClick}
-      disabled={disabled}
-      {...props}
-    >
-      {text}
-    </StyledButton>
+    <div className={className}>
+      <Focus inset={4}>
+        <StyledButton
+          data-testid="button"
+          $size={size}
+          $variant={variant}
+          $fullWidth={fullWidth}
+          onClick={onClick}
+          disabled={disabled}
+          {...props}
+        >
+          {text}
+        </StyledButton>
+      </Focus>
+    </div>
   );
 };

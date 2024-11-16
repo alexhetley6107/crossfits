@@ -18,8 +18,7 @@ export const LoginPage: FC = () => {
       >
         <LogoText size="lg" />
         <Input placeholder="Email" />
-        <Input placeholder="Password" />
-
+        <Input placeholder="Password" type="password" />
         <Button text="Log In" size="lg" fullWidth />
       </Flex>
     </AuthLayout>

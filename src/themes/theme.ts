@@ -8,8 +8,8 @@ export const theme = {
     primary700: '#1c15e6',
   },
   radius: {
-    R5: '5px',
-    R7: '7px',
+    R6: '6px',
+    R8: '8px',
     RFull: '1000px',
   },
 };

@@ -10,7 +10,7 @@ export type IconProps = HTMLAttributes<SVGElement> & {
 
 export const Icon: React.FC<IconProps> = ({ name, size, ...props }) => {
   return (
-    <svg data-testid="Icon" width={size || '20'} height={size || '20'} {...props}>
+    <svg data-testid="Icon" width={size || '20'} height={size || '20'} fill="none" {...props}>
       <use href={`/sprite.svg#${name}`}></use>
     </svg>
   );

@@ -10,7 +10,7 @@ const StyledFocus = styled.div<{ $inset: number }>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  border-radius: ${theme.radius.R7};
+  border-radius: ${theme.radius.R8};
   transition: opacity 0.1s ease-in-out;
   inset: ${({ $inset }) => `-${$inset}`}px;
   border: 3px solid ${theme.colors.primary};

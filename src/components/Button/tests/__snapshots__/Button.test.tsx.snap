@@ -2,7 +2,8 @@
 
 exports[`Button component > Props > Disabled 1`] = `
 .c0 {
-  border-radius: 5px;
+  outline: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s;
   border: 1px solid #346beb;
@@ -14,12 +15,8 @@ exports[`Button component > Props > Disabled 1`] = `
   background-color: #346beb;
 }
 
-.c0:hover:not([disabled]) {
-  transform: translateY(-1px);
-}
-
-.c0:active:not([disabled]) {
-  transform: translateY(1px);
+.c0:focus~.focus {
+  opacity: 1;
 }
 
 <button
@@ -33,7 +30,8 @@ exports[`Button component > Props > Disabled 1`] = `
 
 exports[`Button component > Props > Full Width 1`] = `
 .c0 {
-  border-radius: 5px;
+  outline: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s;
   border: 1px solid #346beb;
@@ -45,12 +43,8 @@ exports[`Button component > Props > Full Width 1`] = `
   background-color: #346beb;
 }
 
-.c0:hover:not([disabled]) {
-  transform: translateY(-1px);
-}
-
-.c0:active:not([disabled]) {
-  transform: translateY(1px);
+.c0:focus~.focus {
+  opacity: 1;
 }
 
 <button
@@ -63,7 +57,8 @@ exports[`Button component > Props > Full Width 1`] = `
 
 exports[`Button component > Props > Size > Large 1`] = `
 .c0 {
-  border-radius: 5px;
+  outline: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s;
   border: 1px solid #346beb;
@@ -75,12 +70,8 @@ exports[`Button component > Props > Size > Large 1`] = `
   background-color: #346beb;
 }
 
-.c0:hover:not([disabled]) {
-  transform: translateY(-1px);
-}
-
-.c0:active:not([disabled]) {
-  transform: translateY(1px);
+.c0:focus~.focus {
+  opacity: 1;
 }
 
 <button
@@ -93,7 +84,8 @@ exports[`Button component > Props > Size > Large 1`] = `
 
 exports[`Button component > Props > Size > Small 1`] = `
 .c0 {
-  border-radius: 5px;
+  outline: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s;
   border: 1px solid #346beb;
@@ -105,12 +97,8 @@ exports[`Button component > Props > Size > Small 1`] = `
   background-color: #346beb;
 }
 
-.c0:hover:not([disabled]) {
-  transform: translateY(-1px);
-}
-
-.c0:active:not([disabled]) {
-  transform: translateY(1px);
+.c0:focus~.focus {
+  opacity: 1;
 }
 
 <button
@@ -123,7 +111,8 @@ exports[`Button component > Props > Size > Small 1`] = `
 
 exports[`Button component > Props > variant > Filled 1`] = `
 .c0 {
-  border-radius: 5px;
+  outline: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s;
   border: 1px solid #346beb;
@@ -135,12 +124,8 @@ exports[`Button component > Props > variant > Filled 1`] = `
   background-color: #346beb;
 }
 
-.c0:hover:not([disabled]) {
-  transform: translateY(-1px);
-}
-
-.c0:active:not([disabled]) {
-  transform: translateY(1px);
+.c0:focus~.focus {
+  opacity: 1;
 }
 
 <button
@@ -153,7 +138,8 @@ exports[`Button component > Props > variant > Filled 1`] = `
 
 exports[`Button component > Props > variant > Outlined 1`] = `
 .c0 {
-  border-radius: 5px;
+  outline: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s;
   border: 1px solid #346beb;
@@ -165,12 +151,8 @@ exports[`Button component > Props > variant > Outlined 1`] = `
   background-color: #fff;
 }
 
-.c0:hover:not([disabled]) {
-  transform: translateY(-1px);
-}
-
-.c0:active:not([disabled]) {
-  transform: translateY(1px);
+.c0:focus~.focus {
+  opacity: 1;
 }
 
 <button
