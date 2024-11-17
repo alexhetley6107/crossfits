@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as Loader from './Loader.stories.tsx';
+
+<Meta of={Loader} title="Loader" />
+
+# Loader
+
+<Canvas of={Loader.Base} />
+
+## Usage
+
+```ts
+import { Loader } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <Loader />;
+};
+```
+
+### Arguments
+
+- **className** - A string that sets css class to the root of component.

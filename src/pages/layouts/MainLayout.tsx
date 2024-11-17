@@ -1,4 +1,4 @@
-import { Avatar, LogoText } from '@/components';
+import { Avatar, Icon, LogoText } from '@/components';
 import { Flex } from '@/shared';
 import React, { PropsWithChildren } from 'react';
 
@@ -23,7 +23,11 @@ export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
         }}
       >
         <LogoText />
-        <Avatar />
+
+        <Flex>
+          <Icon name="Clock" size="24" />
+          <Avatar />
+        </Flex>
       </Flex>
       <div
         style={{

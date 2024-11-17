@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loader component > Props > Color 1`] = `
+.c0 svg {
+  animation: spin 1s linear infinite;
+}
+
+<div
+  class="c0"
+  data-testid="Loader"
+  style="height: 20px;"
+>
+  <svg
+    color="red"
+    data-testid="Icon"
+    fill="none"
+    height="20"
+    width="20"
+  >
+    <use
+      href="/sprite.svg#Load"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Loader component > Props > Size 1`] = `
+.c0 svg {
+  animation: spin 1s linear infinite;
+}
+
+<div
+  class="c0"
+  data-testid="Loader"
+  style="height: 30px;"
+>
+  <svg
+    data-testid="Icon"
+    fill="none"
+    height="30"
+    width="30"
+  >
+    <use
+      href="/sprite.svg#Load"
+    />
+  </svg>
+</div>
+`;

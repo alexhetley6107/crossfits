@@ -30,7 +30,7 @@ describe('Button component', () => {
         expect(button).toMatchSnapshot();
       });
     });
-    describe('variant', () => {
+    describe('Variant', () => {
       it('Filled', () => {
         render(<Button text="Button" variant="filled" />);
         const button = screen.getByTestId('button');
@@ -51,6 +51,18 @@ describe('Button component', () => {
       render(<Button text="Button" disabled />);
       const button = screen.getByTestId('button');
       expect(button).toMatchSnapshot();
+    });
+    describe('Loading', () => {
+      it('Filled', () => {
+        render(<Button text="Button" variant="filled" loading />);
+        const button = screen.getByTestId('button');
+        expect(button).toMatchSnapshot();
+      });
+      it('Outlined', () => {
+        render(<Button text="Button" variant="outlined" loading />);
+        const button = screen.getByTestId('button');
+        expect(button).toMatchSnapshot();
+      });
     });
   });
 });
