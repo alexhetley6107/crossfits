@@ -6,7 +6,7 @@ import { theme } from '@/themes';
 
 export const List: StoryObj<typeof Example> = {
   render: () => (
-    <Flex>
+    <Flex styles={{ flexWrap: 'wrap' }}>
       {IconsList.map((name) => (
         <Flex key={name}>
           <Example name={name} color={theme.colors.grey} />

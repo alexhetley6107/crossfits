@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as NavCalendar from './NavCalendar.stories.tsx';
+
+<Meta of={NavCalendar} title="NavCalendar" />
+
+# NavCalendar
+
+<Canvas of={NavCalendar.Base} />
+
+## Usage
+
+```ts
+import { NavCalendar } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <NavCalendar />;
+};
+```
+
+### Arguments
+
+- **className** - A string that sets css class to the root of component.
