@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { ButtonHTMLAttributes, FC, PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { theme } from '@/themes';
 
@@ -11,6 +11,9 @@ export const StyledButton = styled.button`
   outline: none;
 `;
 
-export const IconButton: FC<PropsWithChildren> = ({ children }) => {
-  return <StyledButton>{children}</StyledButton>;
+export const IconButton: FC<ButtonHTMLAttributes<HTMLButtonElement> & PropsWithChildren> = ({
+  children,
+  onClick,
+}) => {
+  return <StyledButton onClick={onClick}>{children}</StyledButton>;
 };

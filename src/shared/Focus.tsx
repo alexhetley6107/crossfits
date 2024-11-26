@@ -13,7 +13,7 @@ const StyledFocus = styled.div<{ $inset: number }>`
   border-radius: ${theme.radius.R8};
   transition: opacity 0.1s ease-in-out;
   inset: ${({ $inset }) => `-${$inset}`}px;
-  border: 3px solid ${theme.colors.primary};
+  border: 2px solid ${theme.colors.primary};
 `;
 
 const StyledBox = styled.div`

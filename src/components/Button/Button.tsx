@@ -1,7 +1,6 @@
-import { Focus } from '@/shared';
+import React from 'react';
 import { theme } from '@/themes/theme';
 import { ButtonVariant, SizeUnion } from '@/types';
-import React from 'react';
 import styled from 'styled-components';
 import { Loader } from '../Loader';
 
@@ -96,25 +95,23 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <div className={className}>
-      <Focus inset={4}>
-        <StyledButton
-          data-testid="button"
-          $size={size}
-          $variant={variant}
-          $fullWidth={fullWidth}
-          onClick={onClick}
-          disabled={disabled}
-          {...props}
-        >
-          {text}
+      <StyledButton
+        data-testid="button"
+        $size={size}
+        $variant={variant}
+        $fullWidth={fullWidth}
+        onClick={onClick}
+        disabled={disabled}
+        {...props}
+      >
+        {text}
 
-          {loading && (
-            <LoaderWrapper>
-              <Loader size={+sizeMap.loader[size]} color={variantMap.loader[variant]} />
-            </LoaderWrapper>
-          )}
-        </StyledButton>
-      </Focus>
+        {loading && (
+          <LoaderWrapper>
+            <Loader size={+sizeMap.loader[size]} color={variantMap.loader[variant]} />
+          </LoaderWrapper>
+        )}
+      </StyledButton>
     </div>
   );
 };
