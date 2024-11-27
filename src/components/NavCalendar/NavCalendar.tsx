@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, Fragment, useState } from 'react';
 import { Flex, IconButton } from '@/shared';
 import styled from 'styled-components';
 import { Icon } from '../Icon';
@@ -10,7 +10,7 @@ export type NavCalendarProps = {
   className?: string;
   date?: Date;
   onChange?: (date: Date) => void;
-  monthInfo?: Date[];
+  monthInfo?: { tasks: number; date: string }[];
   loading?: boolean;
   onMonthChange?: (date: Date) => void;
 };
@@ -87,7 +87,7 @@ const getOffsetDays = (year: number, month: number) => {
 export const NavCalendar: FC<NavCalendarProps> = ({
   className,
   loading,
-  // monthInfo,
+  monthInfo,
   date,
   onChange,
   onMonthChange,
@@ -104,6 +104,11 @@ export const NavCalendar: FC<NavCalendarProps> = ({
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const offsetDays = getOffsetDays(year, month);
 
+  const datesWithTasks = monthInfo?.map(({ tasks, date }) => {
+    const day = new Date(date).getDate();
+    return { day, tasks };
+  });
+
   const days = [...Array(daysInMonth)].map((_, index) => {
     const day = index + 1;
 
@@ -113,7 +118,9 @@ export const NavCalendar: FC<NavCalendarProps> = ({
       month === chosenDate.getMonth() &&
       year === chosenDate.getFullYear();
 
-    return { day, today, chosen, tasks: 0 };
+    const tasks = datesWithTasks?.find((d) => d.day === day)?.tasks ?? 0;
+
+    return { day, today, chosen, tasks };
   });
 
   const isTodayDisabled =
@@ -140,6 +147,7 @@ export const NavCalendar: FC<NavCalendarProps> = ({
 
   const handleDayClick = (day: number) => {
     const newDate = new Date(year, month, day);
+
     setChosenDate(newDate);
     onChange?.(newDate);
   };
@@ -180,22 +188,17 @@ export const NavCalendar: FC<NavCalendarProps> = ({
         {[...Array(offsetDays)].map((_, index) => (
           <div key={index}></div>
         ))}
-        {days.map(({ day, chosen, today }, index) => (
-          <>
+        {days.map(({ day, chosen, today, tasks }, index) => (
+          <Fragment key={index}>
             {loading ? (
               <Skeleton width={32} height={32} radius={8} />
             ) : (
-              <StyledDay
-                key={index}
-                $chosen={chosen}
-                $today={today}
-                onClick={() => handleDayClick(day)}
-              >
+              <StyledDay $chosen={chosen} $today={today} onClick={() => handleDayClick(day)}>
                 {day}
-                <StyledTasks>30</StyledTasks>
+                {Boolean(tasks) && <StyledTasks>{tasks}</StyledTasks>}
               </StyledDay>
             )}
-          </>
+          </Fragment>
         ))}
       </Calendar>
     </NavCalendarWrapper>

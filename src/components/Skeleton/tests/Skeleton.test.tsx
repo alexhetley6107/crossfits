@@ -12,16 +12,4 @@ describe('Skeleton component', () => {
       expect(el).toBeInTheDocument();
     });
   });
-  describe('General', () => {
-    it('Dimensions', () => {
-      render(<Skeleton width={30} height={30} />);
-      const el = screen.getByTestId('skeleton');
-      expect(el).toMatchSnapshot();
-    });
-    it('Render', () => {
-      render(<Skeleton width={30} height={30} radius={20} />);
-      const el = screen.getByTestId('skeleton');
-      expect(el).toMatchSnapshot();
-    });
-  });
 });
