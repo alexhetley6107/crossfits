@@ -1,0 +1,26 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Example } from './Example.tsx';
+import * as Skeleton from './Skeleton.stories.tsx';
+
+<Meta of={Skeleton} title="Skeleton" />
+
+# Skeleton
+
+<Canvas of={Skeleton.Base} />
+
+## Usage
+
+```ts
+import { Skeleton } from 'remindee-ui-kit';
+
+export const Example = () => {
+  return <Skeleton />;
+};
+```
+
+### Arguments
+
+- **className** - A string that sets css class to the root of component.
+- **width** - A number that sets width of skeleton in `px`.
+- **height** - A number that sets height of skeleton in `px`.
+- **radius** - A number that sets border-radius of skeleton in `px`.
